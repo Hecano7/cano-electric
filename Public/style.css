@@ -1,0 +1,643 @@
+/*
+Theme Name : Iron Works
+Template: twentyseventeen
+*/
+
+*{margin: 0;padding: 0;box-sizing: border-box;-webkit-box-sizing: border-box;}
+*:focus{outline: none;}
+input[type=text],
+input[type=submit],
+select,
+textarea{-webkit-appearance: none;appearance: none;border-radius: 0;}
+div:after,
+section:before,
+section:after,
+main:before,
+main:after,
+header:before,
+header:after,
+footer:before,
+footer:after,
+nav:before,
+nav:after,
+ul:before,
+ul:after,
+ol:before,
+ol:after{content: "";display: block;clear: both;overflow: hidden;}
+
+
+body{font-family: Arial; background-color: rgb(253,208,179); text-align: center;}
+
+.page__holder{max-width: 1000px;width: 95%;margin: auto;position: relative;}
+
+#masthead #top{background: #000;padding: 10px;position: relative;}
+#masthead #top #text-4{color: #FFF;float: left;font-size: 14px;font-weight: bold;}
+#masthead #top #text-5{color: #FFF;float: right;font-size: 14px;font-weight: bold;}
+#top{background: #000;padding: 10px;position: relative;width: 100%;}
+.logo{
+  width: 30%;
+  margin: 1em 0em 1em 0em;
+}
+.navbar {
+  top: 0;
+  z-index: 1;
+  position: sticky;
+  background-color: rgb(135, 26, 26);
+  display: inline-flex;
+  width: 80%;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.navbar a {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.photo-uploader-box {
+  width: 100%;
+  height: 80%;
+  margin: 30px auto 0;
+  background: #fff;
+  text-align: center;
+  border-radius: 10px;
+}
+.photo-upload-label{
+  display:inline-block;
+  width: 70%;
+  background:#fff;
+  border:1.5px solid #377aed;
+  margin: 10px auto;
+  padding:10px;
+  color:#377aed;
+  text-transform:uppercase;
+  cursor:pointer;
+  transition:background .3s ease, color .3s ease;
+  border-radius: 10px;
+}
+.photo-upload-label:hover{
+  background:#377aed;
+  color:#fff;
+}
+#photo-upload {
+  display:none;
+  border: 1px solid #377aed;
+}
+.img-upload-preview {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.previewImage {
+  border: 1px solid #819d97;
+  height: 120px;
+  width: 120px;
+  margin-bottom: 7%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.previewImage i {
+  width: 24px;
+  height:24px;
+  position:relative;
+  right:20px;
+  top:-4px;
+  float: left;;
+  border:1px solid #369;
+  background: #ffffff;
+  padding: 2px;
+  color: #377aed;
+  font-weight:700;
+  font: 18px arial;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color .3s ease, border .3s ease;
+}
+.previewImage i:hover{
+  color: #ff1313;
+  border:1px solid #ff1313;
+}
+.previewImage img {
+  border:1px solid #369;
+  width: 118px;
+  height: 118px;
+}
+.photo-file-detail {
+  background: #819d97;
+  padding: 7px;
+  color: #ffffff;
+  border-bottom: 1px solid #fff;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.photo-file-details {
+  display: inline-block;
+  width: 400px;
+}
+.gall-header{
+  padding-top: 5%;
+  margin-bottom: 5px;
+  font-family: crimson text semi bold;
+
+}
+h2{
+  margin-bottom: 5%;
+}
+.dropdown {
+  overflow: hidden;
+  margin-left: 10%; 
+}
+.marginLeft {
+  margin-left: 10%;
+}
+.left-side{
+  padding-right: 10%;
+}
+.right-side{
+  width: 50%;
+}
+
+a{
+  display: inline;
+}
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(135, 26, 26);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: red;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.block{
+  background-image: url("pics/front-gate.jpg");
+  background-size: cover;
+  background-position: top;
+  margin: 2em 0em 2em 0em;
+}
+h1{
+ padding-top: 20%;
+ margin-bottom: 20%;
+}
+.flex{
+  margin: 1em 0em 1em 0em;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.affordable{
+  float: left;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  padding: 2%;
+  position: relative;
+  text-align: center;
+}
+.centered {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3vw;
+  color: #0a0a0a;
+  line-height: 1.5;
+  text-align: center;
+  font-family: Abel;
+  font-weight: 400;
+  font-style: normal;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, .8fr);
+  grid-gap: 15px;
+  width: 100%;
+  padding: 5%;
+}
+.gallery > img {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.gallery > a {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.driveway {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, .8fr);
+  grid-gap: 15px;
+  width: 100%;
+  padding: 5%;
+  margin-top: 5%;
+}
+.driveway > img {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.driveway > a {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.font{
+  font-size: 40px;
+  color: #0a0a0a;
+  line-height: 1.5;
+  text-align: center;
+  font-family: Amaranth;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3.5vw;
+  position: relative;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=tel] {
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: #b5b5b5;
+}
+.split{
+  display: flex;
+}
+.container {
+  border-radius: 5px;
+  background-color: rgb(135, 26, 26);
+  padding: 5%;
+  height: 80%;
+}
+.number{
+  color:white;
+}
+.number:hover{
+  color:red;
+}
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bold{
+  font-weight: 700;
+  font-size: 3.7vw;
+}
+
+.cantact-us{
+  padding: 5% 5% 10% 5%;width: 100%;float: left;
+}
+#footer {
+  padding: 20px;
+  background: #000;
+  text-align: center;
+}
+.next {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  width: 80%;
+  padding: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -5em;
+}
+.next > img {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  width: 100%;
+}
+.image-preview{
+  text-align: left;
+  width: 250px;
+  min-height: 170px;
+  border: 2px solid #dddddd;
+  margin: 1em auto 1em 2em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #cccccc;
+}
+.image-preview__image {
+  display: none;
+  width: 100%;
+}
+#inpFile{
+  max-width: 14em;
+}
+
+.float-left{
+  display:flex;
+  width: 100%;
+  margin-top: 1em;
+
+}
+
+img.mini{
+  max-height: 2em;
+  max-width: 2em;
+}
+.description{
+  font-size: 2.5vw;
+  text-align: left;
+  text-indent: 2em;
+  font-family: crimson text semi bold;
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+.automatic{
+  width: 80%;
+  font-size: 2vw;
+  text-align: left;
+  text-indent: 2em;
+  margin: 5% 10% 5% 10%;
+  font-family: crimson text semi bold;
+}
+.h1top{
+  padding: 0;
+  margin: 2em 0 -4em 0;
+}
+.h1bottom{
+  padding: 0;
+  margin-bottom: -3em;
+}
+.h1{
+  padding: 0;
+  margin: 2em 0 0 0;
+ }
+  
+  /* Styles the lightbox, removes it from sight and adds the fade-in transition */
+  
+  .lightbox-target {
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  background: rgba(0,0,0,.7);
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+  overflow: hidden;
+  }
+  
+  /* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+  
+  .lightbox-target img {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  bottom: 0;
+  max-height: 0%;
+  max-width: 0%;
+  border: 3px solid white;
+  box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  box-sizing: border-box;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  }
+  
+  /* Styles the close link, adds the slide down transition */
+  
+  a.lightbox-close {
+  display: block;
+  width:50px;
+  height:50px;
+  box-sizing: border-box;
+  background: white;
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  top: -80px;
+  right: 0;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  }
+  
+  /* Provides part of the "X" to eliminate an image from the close link */
+  
+  a.lightbox-close:before {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top:10px;
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+  transform:rotate(45deg);
+  }
+  
+  /* Provides part of the "X" to eliminate an image from the close link */
+  
+  a.lightbox-close:after {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 26px;
+  top:10px;
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+  }
+  
+  /* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+  
+  .lightbox-target:target {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+  }
+  
+  .lightbox-target:target img {
+  max-height: 100%;
+  max-width: 100%;
+  }
+  
+  .lightbox-target:target a.lightbox-close {
+  top: 0px;
+  }
+  
+
+@media screen and (min-width: 1400px) {
+  .continer{
+    padding: 2%;
+  }
+  .cantact-us{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    float: unset;
+  }
+  h2{
+    margin-bottom: 2%;
+  }
+}
+@media screen and (max-width: 830px) {
+  .marginLeft {
+    margin-left: 0%;
+  }
+  .dropdown {
+    margin-left: 0%; 
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .affordable{
+    float: unset;
+    width: 100%;
+  }
+  .cantact-us{
+    float: unset;
+    width: 100%;
+  }
+  .centered{
+    font-size: 7vw;
+  }
+  .bold{
+    font-size: 8vw;
+  }
+  .logo{
+    width: 80%;
+  }
+  .block{
+    height: 25em;
+  }
+  .block{
+    padding-top: 10%;
+  }
+  .next {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 0;
+  }
+  .automatic{
+    font-size: 6vw;
+    margin: 0% 10% 5% 10%;
+  }
+  .h1top{
+    padding: 0;
+    margin: 1em 0 -.7em 0;
+  }
+  .h1bottom{
+    padding: 0;
+    margin-bottom: 0;
+  }
+   .h1{
+    padding: 0;
+    margin: 1em 0 0 0;
+   }
+   .dropdown-content {
+    margin-left: -12%;
+  }
+  .dropdown-content a {
+    text-align: center;
+  }
+  .split{
+    display: unset;
+  }
+  .left-side{
+    padding-right: 0%;
+  }
+  .right-side{
+    width: 100%;
+  }
+  .description{
+    font-size: 4vw;
+    margin: 0 5% 0 5%;
+  }
+  .hide{
+    padding-top: 0;
+  }
+}
