@@ -42,17 +42,17 @@ body{font-family: Arial; background-color: rgb(253,208,179); text-align: center;
   top: 0;
   z-index: 1;
   position: sticky;
-  background-color: rgb(135, 26, 26);
-  display: inline-flex;
-  width: 80%;
+  background-color: #1d8dce;
+  display:flex;
+  width: 100%;
   justify-content: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .navbar a {
   font-size: 16px;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
+  display: grid;
+  align-items: center;
   text-decoration: none;
 }
 .photo-uploader-box {
@@ -147,6 +147,8 @@ h2{
 .dropdown {
   overflow: hidden;
   margin-left: 10%; 
+  display: grid;
+  align-items:flex-end;
 }
 .marginLeft {
   margin-left: 10%;
@@ -166,7 +168,6 @@ a{
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
