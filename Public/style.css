@@ -46,7 +46,6 @@ body{font-family: Arial; background-color: rgb(253,208,179); text-align: center;
   display:flex;
   width: 100%;
   justify-content: center;
-  justify-content: space-around;
 }
 .navbar a {
   font-size: 16px;
@@ -146,7 +145,6 @@ h2{
 }
 .dropdown {
   overflow: hidden;
-  margin-left: 10%; 
   display: grid;
   align-items:flex-end;
 }
