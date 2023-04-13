@@ -35,7 +35,7 @@ body{font-family: Arial; background-color: rgb(253,208,179); text-align: center;
 #masthead #top #text-5{color: #FFF;float: right;font-size: 14px;font-weight: bold;}
 #top{background: #000;padding: 10px;position: relative;width: 100%;}
 .logo{
-  width: 30%;
+  width: 100%;
   margin: 1em 0em 1em 0em;
 }
 .navbar {
@@ -48,6 +48,7 @@ body{font-family: Arial; background-color: rgb(253,208,179); text-align: center;
   justify-content: center;
 }
 .navbar a {
+  width: 20%;
   font-size: 16px;
   color: white;
   display: grid;
@@ -144,6 +145,7 @@ h2{
   margin-bottom: 5%;
 }
 .dropdown {
+  width: 20%;
   overflow: hidden;
   display: grid;
   align-items:flex-end;
