@@ -21,7 +21,7 @@ onscroll = (event) => {   if(window.scrollY != 0)
   </div>
   <nav role="navigation" style="
   top: 2em;
-  left:1.5em;
+  left:1.6em;
   position:fixed;
   z-index: 2;">
   <div id="menuToggle">
