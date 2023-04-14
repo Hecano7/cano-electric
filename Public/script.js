@@ -9,15 +9,14 @@ onscroll = (event) => {   if(window.scrollY != 0)
 };
 
 
+  if(500>document.documentElement.clientWidth){
+    console.log("resizing window");
 
-
-  if(500>screen.width){
-    let greeting = document.querySelector('.navbar');
-
-// Get HTML content
-  greeting.outerHTML = `
-  <div class="navbar">
-  <a href="/" id="Logos" style="width: 50%;"><img  src="./Public/logo-clear.png" id="complogo" style="margin:.5em 0em .5em 0em;" class="logo" alt="cano electric"></a>
+  // Get HTML content
+  document.getElementById('navbar').outerHTML = `
+  <div id="navbar" class="navbar">
+  <a href="/" id="Logos" style="width: 50%;justify-items: center;"><img  src="./Public/logo-clear.png" id="complogo" style="margin:.5em 0em .5em 0em;" class="logo" alt="cano electric"></a>
   </div>
   `;}
+
 
