@@ -192,9 +192,9 @@ h2{
 .dropdown-content a:hover {
   color:gray;
 }
-/* .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
   display: block;
-} */
+}
 .block{
   background-image: url("pics/front-gate.jpg");
   background-size: cover;
