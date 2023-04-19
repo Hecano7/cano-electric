@@ -35,14 +35,14 @@ body{font-family: Arial; background-color: rgb(253,208,179); text-align: center;
 #masthead #top #text-5{color: #FFF;float: right;font-size: 14px;font-weight: bold;}
 #top{background: #000;padding: 10px;position: relative;width: 100%;}
 .logo{
-  width: 100%;
+  width: 60%;
   margin: 1em 0em 1em 0em;
 }
 .navbar {
   top: 0;
   z-index: 1;
   position: sticky;
-  background-color: #1d8dce;
+  background-color: #0c7ac1;
   display:flex;
   width: 100%;
   justify-content: center;
@@ -67,10 +67,10 @@ body{font-family: Arial; background-color: rgb(253,208,179); text-align: center;
   display:inline-block;
   width: 70%;
   background:#fff;
-  border:1.5px solid #377aed;
+  border:1.5px solid #0c7ac1;
   margin: 10px auto;
   padding:10px;
-  color:#377aed;
+  color:#0c7ac1;
   text-transform:uppercase;
   cursor:pointer;
   transition:background .3s ease, color .3s ease;
@@ -643,8 +643,8 @@ img.mini{
 #menuToggle {
   display: block;
   position: relative;
-  top: 25px;
-  left: 25px;
+  top: 2.5em;
+  left: 1.5em;
   width: 25px;
 
   z-index: 1;
@@ -740,7 +740,7 @@ img.mini{
   */
 #menu {
   position: absolute;
-  width: 300px;
+  width: 400px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;

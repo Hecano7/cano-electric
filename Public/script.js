@@ -16,14 +16,14 @@ onscroll = (event) => {   if(window.scrollY != 0)
 
   // Get HTML content
   document.getElementById('navbar').outerHTML = `
-  <div id="navbar" class="navbar">
+  <div id="navbar" class="navbar" style="position:unset;">
   <a href="/" id="Logos" style="width: 50%;justify-items: center;"><img  src="./Public/logo-clear.png" id="complogo" style="margin:.5em 0em .5em 0em;" class="logo" alt="cano electric"></a>
   </div>
   <nav role="navigation" style="
+  position:absolute;
   top: 2em;
-  left:1.6em;
-  position:fixed;
-  z-index: 2;">
+  left: 1.6em;
+  z-index:2;">
   <div id="menuToggle">
     <!--
     A fake / hidden checkbox is used as click reciever,
@@ -46,6 +46,8 @@ onscroll = (event) => {   if(window.scrollY != 0)
     but hey, it's pure CSS magic.
     -->
     <ul id="menu">
+      <a href="https://construction-calculator.herokuapp.com/"><li>Gallery</li></a>
+      <a href="https://construction-calculator.herokuapp.com/even-spaced"><li>Lighting</li></a>
       <a href="https://construction-calculator.herokuapp.com/"><li>Construction Calculator</li></a>
       <a href="https://construction-calculator.herokuapp.com/even-spaced"><li>Find Even Spacing</li></a>
     </ul>
