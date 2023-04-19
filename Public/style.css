@@ -26,7 +26,7 @@ ol:before,
 ol:after{content: "";clear: both;overflow: hidden;}
 
 
-body{font-family: Arial; background-color: rgb(253,208,179); text-align: center;}
+body{font-family: Arial; text-align: center;}
 
 .page__holder{max-width: 1000px;width: 95%;margin: auto;position: relative;}
 
